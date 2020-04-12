@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "working_areas",
+  "info": {
+    "name": "Working areas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "road",
+        "lightBulb",
+        "home",
+        "flag",
+        "handHoldingUsd",
+        "puzzle",
+        "agreement",
+        "chemist"
+      ],
+      "required": true
+    },
+    "language": {
+      "model": "language"
+    }
+  }
+}
