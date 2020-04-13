@@ -32,7 +32,8 @@ resource "docker_container" "jkcms" {
   }
 
   env = [
-    "NODE_ENV=production"
+    "NODE_ENV=production",
+    "DATABASE_HOST=jkcms-db"
   ]
 }
 
