@@ -10,7 +10,7 @@ module.exports = (strapi) => {
         ) {
           const { data } = ctx.request.body;
           const json = JSON.parse(data);
-          const slug = slugify(json.title);
+          const slug = slugify(json.title).toLowerCase();
 
           const count = await strapi.query("articles").count({
             slug,

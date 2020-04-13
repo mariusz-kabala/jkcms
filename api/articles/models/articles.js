@@ -4,15 +4,16 @@ const slugify = require('slugify');
 
 module.exports = {
   beforeSave: async model => {
-    if (model.title) {
-      model.slug = slugify(model.title);
+    if (model.title && !model.slug) {
+      model.slug = slugify(model.title).toLowerCase();
     }
   },
   beforeUpdate: async model => {
-    if (model.getUpdate() && model.getUpdate().title) {
-      model.update({
-        slug: slugify(model.getUpdate().title),
-      });
-    }
+    // @todo as for now looks like this wont be needed, drop it later
+    // if (model.getUpdate() && model.getUpdate().title) {
+    //   model.update({
+    //     slug: slugify(model.getUpdate().title),
+    //   });
+    // }
   },
 };
