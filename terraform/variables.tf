@@ -11,3 +11,6 @@ variable "DOCKER_REGISTRY_PASSWORD" {}
 variable "DOCKER_REGISTRY_USERNAME" {}
 
 variable "app_network" {}
+
+variable "mount_point" {}
+
