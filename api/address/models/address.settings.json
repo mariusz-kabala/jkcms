@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "connection": "default",
+  "collectionName": "addresses",
+  "info": {
+    "name": "Address"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "text",
+      "unique": true
+    },
+    "linkdin": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    }
+  }
+}

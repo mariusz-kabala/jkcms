@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "connection": "default",
+  "collectionName": "seos",
+  "info": {
+    "name": "seo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

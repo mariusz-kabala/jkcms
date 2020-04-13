@@ -30,6 +30,13 @@
     },
     "language": {
       "model": "language"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "articles": {
+      "model": "articles"
     }
   }
 }
