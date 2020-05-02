@@ -36,7 +36,10 @@
       "default": 0
     },
     "articles": {
-      "model": "articles"
+      "collection": "articles"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
