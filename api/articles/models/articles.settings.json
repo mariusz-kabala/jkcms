@@ -28,6 +28,10 @@
     "user": {
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "working_area": {
+      "model": "working-areas",
+      "via": "article"
     }
   }
 }

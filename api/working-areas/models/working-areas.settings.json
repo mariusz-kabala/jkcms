@@ -40,6 +40,10 @@
     },
     "description": {
       "type": "richtext"
+    },
+    "article": {
+      "via": "working_area",
+      "model": "articles"
     }
   }
 }
